@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Luxury Colors */
+  --color-gold-100: #FDFBF7;
+  --color-gold-200: #F5ECD8;
+  --color-gold-300: #E4D2B1;
+  --color-gold-400: #C5A059;
+  --color-gold-500: #B28E4A;
+  --color-gold-600: #9A7B3E;
+  --color-gold-700: #7C622F;
+  --color-gold-800: #55431D;
+  --color-gold-900: #29200B;
+
+  --color-obsidian-50: #F8FAFC;
+  --color-obsidian-100: #F1F5F9;
+  --color-obsidian-200: #E2E8F0;
+  --color-obsidian-800: #1E1E22;
+  --color-obsidian-900: #121214;
+  --color-obsidian-950: #0A0A0B;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-obsidian-950 text-slate-300 antialiased selection:bg-gold-400/30 selection:text-white;
+  }
+
+  /* Custom high-end scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A0A0B;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C5A059;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B28E4A;
+  }
+}
+
+/* Custom background mesh grid and gradients for luxury appearance */
+.bg-mesh {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(197, 160, 89, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 0%, rgba(197, 160, 89, 0.05) 0px, transparent 40%),
+    radial-gradient(at 100% 100%, rgba(18, 18, 20, 0.8) 0px, transparent 50%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF 0%, #E4D2B1 50%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-glow {
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.05);
+}
+
+.border-gold-glow:hover {
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.1);
+}
+
+/* Custom hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

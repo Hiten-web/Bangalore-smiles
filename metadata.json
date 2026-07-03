@@ -1,0 +1,6 @@
+{
+  "name": "Bangalore Smiles",
+  "description": "Ultra-luxury, premium web experience and blueprint for Bangalore Smiles Dental Care, led by Dr. Neha Singh (MDS, Orthodontics & Invisalign Specialist). Discover the art of dental excellence and custom-designed smiles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
